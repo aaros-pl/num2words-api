@@ -2,12 +2,12 @@ FROM python:3.7
 
 EXPOSE 5555
 
-RUN mkdir /api
-WORKDIR /api
+RUN mkdir /app
+WORKDIR /app
 
-COPY requirements.txt /api/requirements.txt
+COPY requirements.txt /app/requirements.txt
 RUN pip install -r requirements.txt
 
-COPY . /api
+COPY . /app
 
-CMD python api.py
+CMD python app.py

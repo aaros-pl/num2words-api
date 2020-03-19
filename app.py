@@ -70,4 +70,4 @@ api.add_resource(Num2WordAPI, '/api')
 if __name__ == '__main__':
     print(str("* Starting Flask server..."
               "Please wait until server has fully started."))
-    app.run(host="0.0.0.0", debug=False, threaded=False)
+    app.run(host="0.0.0.0", debug=False, threaded=False, port="5555")
